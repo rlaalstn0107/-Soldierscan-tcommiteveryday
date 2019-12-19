@@ -7,21 +7,44 @@
 </head>
 
 <body>
-  <h1>WEB</h1>
+  <h1><a href="index.php">WEB</a></h1>
   <ol>
-    <li><a href="index.php?id=HTML">HTML</a></li>
-    <li><a href="index.php?id=CSS">CSS</a></li>
-    <li><a href="index.php?id=JavaScript">JavaScript</a></li>
+    <?php  /*
+    data 디렉토리에 있는 파일의  목록을 가져와라 PHP아
+    파일의 목록 하나 하나를
+    li와 a 태그를 이용해서 글목록을 만드세요.
+    */
+    $list = scandir('data');
+    $i = 0;
+    while($i<count($list)){
+      if($list[$i] != '.'){
+        if($list[$i] !='..'){
+          ?>
+          <li><a href="index.php?id=<?=$list[$i]?>"><?=$list[$i]?></a></li>
+          <?php
+        }
+      }
+      $i=$i + 1;
+    }
+    ?>
   </ol>
-</body>
   <h2>
     <?php
+    if(isset($_GET['id'])){
       echo $_GET['id'];
+    }
+    else{
+      echo "Welcome";
+    }
      ?>
   </h2>
   <?php
+  if(isset($_GET['id'])){
   echo file_get_contents("data/".$_GET['id']);
-   ?>
+} else {
+  echo "Hello,PHP";
+}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+   ?>
+ </body>
 </html>
