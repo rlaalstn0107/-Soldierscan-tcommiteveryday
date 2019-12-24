@@ -9,24 +9,20 @@
 <body>
   <h1><a href="index.php">WEB</a></h1>
   <ol>
-    <?php  /*
-    data 디렉토리에 있는 파일의  목록을 가져와라 PHP아
-    파일의 목록 하나 하나를
-    li와 a 태그를 이용해서 글목록을 만드세요.
-    */
-    $list = scandir('data');
-    $i = 0;
-    while($i<count($list)){
-      if($list[$i] != '.'){
-        if($list[$i] !='..'){
-          ?>
-          <li><a href="index.php?id=<?=$list[$i]?>"><?=$list[$i]?></a></li>
-          <?php
+    <?php
+      $list=scandir('./data');  //  . 은현재 ..은 부모
+
+      $arrayn=count($list);
+      $i=0;
+      while($i<$arrayn){
+        if($list[$i] != '.'){
+          if($list[$i] != '..'){
+          echo "<li><a href=\"index.php?id=$list[$i]\">$list[$i]</a></li>\n";
+          }
         }
+        $i=$i+1;
       }
-      $i=$i + 1;
-    }
-    ?>
+     ?>
   </ol>
   <h2>
     <?php
