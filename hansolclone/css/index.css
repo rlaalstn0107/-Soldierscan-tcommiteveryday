@@ -18,4 +18,15 @@ header .spot li:first-child:after {display: none;}
 header .spot li a {display: block; height: 81px; padding: 0 10px; line-height:81px;}
 header .spot li:last-child a {padding-right: 0;}
 
- 
+.visual  {padding : 0 50px;}
+.visual .prev,
+.visual .next {display: block; position: absolute;top:50%; width:25px; 
+    height:47px; transform: translateY(-50%); background:
+     url(../hansolimg/sp_com.png) no-repeat; color: transparent;}
+.visual .prev {left: 82px; background-position: -128px -60px;}
+.visual .next {right: 82px; background-position: -158px -60px;}
+.visual .control { position: absolute; left: 0; bottom: 55px;}
+
+.visual .con > div {height: 640px;}
+.visual .con .slide {background: url(../hansolimg/bg_main02.jpg) no-repeat center;} 
+
