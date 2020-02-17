@@ -20,50 +20,66 @@ header .spot li a {display: block; height: 81px; padding: 0 10px; line-height:81
 header .spot li:last-child a {padding-right: 0;}
 
 .visual  {position: relative; padding : 0 50px;}
-.visual .prev,
-.visual .next {display: block; position: absolute;top:50%; width:25px; 
-    height:47px; transform: translateY(-50%); background:
-     url(../hansolimg/sp_com.png) no-repeat; color: transparent;}
-.visual .prev {left: 82px; background-position: -128px -60px;}
-.visual .next {right: 82px; background-position: -158px -60px;}
-.visual .control { position: absolute; left: 0; bottom: 55px; width: 100%; 
-    text-align: center; }
-.visual .control > div {display: inline-block; position: relative;
-    padding: 0 45px 0 0;}
-.visual .control > div > div {position: absolute; right : 0;}
-.visual .control > div > div a {overflow:hidden;  display: inline-block;
-    margin: 0 0 0 7px; width: 8px;
-     height: 9px; background:url(../hansolimg/sp_com.png) no-repeat;opacity: 0.5;}
-.visual .control >div >div a.on {opacity: 1;}     
-.visual .control >div >div a.play {background-position: -108px -72px;}
-.visual .control >div >div a.pause {background-position: -108px -60px;}
-.visual .control ul {display: inline-block;position: relative; top: -7px; font-size: 0;}
-.visual .control li {display: inline-block; padding: 0 3px;}
-.visual .control li.on a { background: #fff;}
-.visual .control li a { display: block; width: 50px; height: 3px;
-    background:rgba(255,255,255,0.5); border: none;}
-
-.visual .control a { color: transparent;}
-
 .visual .con > div {height: 640px;}
 .visual .con .slide {background: url(../hansolimg/bg_main02.jpg) no-repeat center;} 
-.visual .con .slide {background: url(../hansolimg/bg_main02.jpg)no-repeat center; color:#fff;
-    font-size:32px; line-height: 46px;}
+.visual .con .slide {background: url(../hansolimg/bg_main02.jpg)no-repeat center; 
+    color:#fff; font-size:32px; line-height: 46px;}
 .visual .con .slide p {padding: 19px 0 0 ; font-size: 20px; line-height: 100%; }
 .visual .con .slide .txt {position: absolute; left: 50%; top: 175px;}
 
 .product a {display:block; color: #001829; font-size: 15px;}
 .product a:hover {color :#2d5b79; font-weight: bold;}
-.product a:before {content:""; display: block; width: 64px; height: 52px; background: url(../hansolimg/sp_com.png) no-repeat;}
+.product a:before {content:""; display: block; margin: 0 0 26px; width: 64px; height: 52px; background: url(../hansolimg/sp_com.png) no-repeat;}
+.product ul { padding: 46px 0 41px; text-align: center; font-size: 0px;}  
+
+.product li {display: inline-block; padding: 0 55px; text-align: center;}
 .product li:nth-child(1) a::before {background-position: -3px -118px;}
 .product li:nth-child(2) a::before {background-position: -75px -118px;}
 .product li:nth-child(3) a::before {background-position: -148px -118px;}
 .product li:nth-child(4) a::before {background-position: -219px -118px;}
 .product li:nth-child(5) a::before {background-position: -292px -118px;}
 .product li:nth-child(6) a::before {background-position: -364px -118px;}
-.product li:nth-child(1) a:hover:before {background-position: -3px -118px;}
-.product li:nth-child(2) a:hover:before {background-position: -75px -118px;}
-.product li:nth-child(3) a:hover:before {background-position: -148px -118px;}
-.product li:nth-child(4) a:hover:before {background-position: -219px -118px;}
-.product li:nth-child(5) a:hover:before {background-position: -292px -118px;}
-.product li:nth-child(6) a:hover:before {background-position: -364px -118px;}
+.product li:nth-child(1) a:hover:before {background-position: -3px -184px;}
+.product li:nth-child(2) a:hover:before {background-position: -75px -184px;}
+.product li:nth-child(3) a:hover:before {background-position: -148px -184px;}
+.product li:nth-child(4) a:hover:before {background-position: -219px -184px;}
+.product li:nth-child(5) a:hover:before {background-position: -292px -184px;}
+.product li:nth-child(6) a:hover:before {background-position: -364px -184px;}
+
+
+.magazine {position: relative; background: #dfd9d1 ; }
+.magazine h2 { padding: 50px 0 16px; font-size: 28px;color: #000; 
+    text-align: center; line-height: 100%;}
+.magazine p { text-align: center; font-size: 14px;color: #3a3b36; 
+    line-height: 100%;}
+.magazine .slide_box > div {overflow: hidden; width: 1180px; height: 430px;}
+.magazine .slide_box .left { float: left;}
+.magazine .slide_box .right { float: right;}
+
+/*.slide_box .right >li >a >img {width: 50px;height: 50px;}*/
+/*slide*/
+.slide .prev,
+.slide .next {display: block; position: absolute;top:50%; width:25px; 
+    height:47px; transform: translateY(-50%); background:
+     url(../hansolimg/sp_com.png) no-repeat; color: transparent;}
+.slide .prev {left: 82px; background-position: -128px -60px;}
+.slide .next {right: 82px; background-position: -158px -60px;}
+.slide .control { position: absolute; left: 0; bottom: 55px; width: 100%; 
+    text-align: center; }
+.slide .control > div {display: inline-block; position: relative;
+    padding: 0 45px 0 0;}
+.slide .control > div > div {position: absolute; right : 0;}
+.slide .control > div > div a {overflow:hidden;  display: inline-block;
+    margin: 0 0 0 7px; width: 8px;
+     height: 9px; background:url(../hansolimg/sp_com.png) no-repeat;opacity: 0.5;}
+.slide .control >div >div a.on {opacity: 1;}     
+.slide .control >div >div a.play {background-position: -108px -72px;}
+.slide .control >div >div a.pause {background-position: -108px -60px;}
+.slide .control ul {display: inline-block;position: relative; top: -7px; font-size: 0;}
+.slide .control li {display: inline-block; padding: 0 3px;}
+.slide .control li.on a { background: #fff;}
+.slide .control li a { display: block; width: 50px; height: 3px;
+    background:rgba(255,255,255,0.5); border: none;}
+
+.slide .control a { color: transparent;}
+/*slide*/
