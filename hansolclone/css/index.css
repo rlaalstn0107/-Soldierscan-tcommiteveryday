@@ -47,19 +47,35 @@ header .spot li:last-child a {padding-right: 0;}
 .product li:nth-child(6) a:hover:before {background-position: -364px -184px;}
 
 
-.magazine {position: relative; height: 670px; background: #dfd9d1;}
+.magazine {position: relative; height: 670px; background: #dddddd;}
 .magazine h2 { padding: 50px 0 16px; font-size: 28px;color: #000; 
     text-align: center; line-height: 100%;}
 .magazine p { text-align: center; font-size: 14px;color: #3a3b36; 
     line-height: 100%;}
-.magazine .slide_box > div {overflow: hidden; width: 1180px; height: 430px;}
-.magazine .slide_box .right > li >a >img {width: 50px; height: 50px;}
-.magazine .slide_box >div {width: 1180px; height: 430px;}
+.magazine .slide_box >div {position: absolute; left: 50%; top: 150px;
+    transform: translate(-50%,0); width: 1180px; height: 430px; }
 .magazine .slide_box .left { overflow: hidden; position: relative; float: left; width: 800px;height: 430px;}
 .magazine .slide_box .left img {width: 100%; }
 .magazine .slide_box .left div { position: absolute; right: 0; top: 0; 
-    background: rgba(0,0,0,0.5); padding: 47px 20px 0; width: 200px; height: 100%;}
-.magazine .slide_box .right { float: right;}
+     padding: 47px 20px 0; width: 200px; height: 100%; background: rgba(0,0,0,0.5);
+     box-sizing: border-box;}
+.magazine .slide_box .left div h3 {color:#fff; font-size: 20px; line-height: 32px;}
+.magazine .slide_box .left div h3 span {display: block; font-weight: normal;}
+.magazine .slide_box .left div p { padding: 9px 0 0; font-size: 16px; color: #fff; 
+    text-align: left; line-height: 24px;}
+.magazine .slide_box .left div a {position: absolute; right: 20px; bottom: 40px; 
+    display: block; width: 160px;height: 45px;
+    border: 1px solid #fff; font-size: 16px; color: #fff; text-align: center;
+ line-height: 45px;}
+.magazine .slide_box .right { float: right; padding: 20px 20px 0; width: 380px; 
+    height: 430px; background: #fff; box-sizing: border-box;}
+.magazine .slide_box .right li {padding: 0 0 20px;}
+.magazine .slide_box .right li a {display: table; width: 100%; }
+.magazine .slide_box .right li a div {display: table-cell; position: relative; 
+    padding: 0 0 0 100px; height: 82px; font-size: 16px;color: #333;
+vertical-align: middle;}
+.magazine .slide_box .right li a img {position: absolute; left: 0;top: 0;}
+.magazine .slide_box .right li a strong {display: block; font-size: 13px;color: #000;}
 
 /*.slide_box .right >li >a >img {width: 50px;height: 50px;}*/
 /*slide*/
