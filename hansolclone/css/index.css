@@ -83,6 +83,13 @@ vertical-align: middle;}
 .magazine.slide .prev {left: 50%; margin:26px 0 0 -640px; }
 .magazine.slide .next {right: 50%; margin:26px -640px 0 0;}
 
+.notice > div {width: 1180px; margin: 0 auto; padding: 55px 0;}  /*가운데정렬*/
+.notice > div .top > ul li a {display: block; padding: 100px 0 0; width: 280px;height: 280px; 
+text-align: center; box-sizing: border-box; font-size: 17px; color: #000;}
+.notice >div .top > ul li {float: left;}
+.notice >div .top > ul li:nth-child(1) a {background: url(../hansolimg/bg_key_link01.jpg) no-repeat;}
+.notice >div .top > ul li:nth-child(2) a {background: url(../hansolimg/bg_key_link02.jpg) no-repeat;}
+.notice >div .top > ul li:nth-child(3) a {background: url(../hansolimg/bg_key_link03.jpg) no-repeat;}
 
 /*.slide_box .right >li >a >img {width: 50px;height: 50px;}*/
 /*slide*/
