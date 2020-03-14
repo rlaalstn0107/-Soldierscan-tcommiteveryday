@@ -87,15 +87,19 @@ vertical-align: middle;}
 .notice > div {width: 1180px; margin: 0 auto; padding: 55px 0;}  /*가운데정렬*/
 .notice > div .top > ul {float: left;}
 .notice > div .top > ul a {display: block; padding: 100px 0 0; width: 280px;height: 280px; 
-text-align: center; box-sizing: border-box; font-size: 17px; font-weight: bold; color: #fff;}
-.notice > div .top > ul a span {display: block; padding:20px 0 0; font-weight: normal; 
-font-size: 14px;}
+text-align: center; box-sizing: border-box; font-size: 17px; font-weight: bold; 
+color: #fff; transition: all 0.3s;}
+.notice > div .top > ul a span {display: block; position: relative; top:10px; 
+opacity: 0; padding:20px 0 0; font-weight: normal; font-size: 14px;
+transition: all 0.3s;}
+.notice > div .top > ul a:hover {background: rgba(45,91,121,0.5);}
+.notice > div .top > ul a:hover span  { top: 0; opacity: 1; }
 .notice >div .top > ul li {float: left; padding: 0 20px 0 0;}
-.notice >div .top > ul li:nth-child(1) a {background: url(../hansolimg/bg_key_link01.jpg) no-repeat;
+.notice >div .top > ul li:nth-child(1){background: url(../hansolimg/bg_key_link01.jpg) no-repeat;
 color: #000;}
-.notice >div .top > ul li:nth-child(2) a {background: url(../hansolimg/bg_key_link02.jpg) no-repeat;
+.notice >div .top > ul li:nth-child(2){background: url(../hansolimg/bg_key_link02.jpg) no-repeat;
 color: #000;}
-.notice >div .top > ul li:nth-child(3) a {background: url(../hansolimg/bg_key_link03.jpg) no-repeat;}
+.notice >div .top > ul li:nth-child(3){background: url(../hansolimg/bg_key_link03.jpg) no-repeat;}
 .notice >div .top > div {float: left; padding: 36px 20px 0; width: 280px;height: 280px; 
 background: #f2f0ed; box-sizing: border-box;}
 .notice >div .top > div h2 {padding: 0 0 29px;  font-size: 17px; color: #000; text-align: center; line-height: 100%;}
