@@ -2,4 +2,7 @@
 
 
 div {width: 150px; height:150px;}
-a { background: url(../portpolioimg/roomimg.jpg) no-repeat;}
+header a {display: block; color: transparent; background-image: url(../portpolioimg/roomimg.jpg);}
+
+
+

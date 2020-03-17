@@ -116,12 +116,26 @@ text-align: center; color: #fff; font-size: 15px;}
 background: #f2f0ed;}
 .notice article > div a {font-size: 16px;color: #424241;}
 .notice article > div a p {font-size: 12px; color: #979797;}
-.notice article > div h2 {height:77px; border-bottom: 1px solid #fff; line-height: 77px; font-size: 24px; 
-color: #2d5b79;text-align: center;}
-.notice article > div > a {position:absolute; right:23px;top:24px;width: 30px;
+.notice article > div h2 {height:77px; border-bottom: 1px solid #fff; line-height: 77px; 
+font-size: 24px; color: #2d5b79; text-align: center;}
+.notice article > div > a {position:absolute; right:23px; top:24px;width: 30px;
 height: 30px; background: url(../hansolimg/sp_com.png) no-repeat -196px -60px #fff; 
 border-radius: 30px; color: transparent;}
+.notice  article > div.left ul li {float: left; padding: 35px; width: 50%; 
+border-left:1px solid #fff; box-sizing: border-box; }
+.notice  article > div.left ul li:first-child {border-left:none ;}
+.notice  article > div.left ul li span {display: block; width: 100%;overflow: hidden; 
+text-overflow: ellipsis; white-space: nowrap; line-height: 100%;}
+.notice  article > div.left ul li p {padding: 22x 0 16px; line-height: 100%;}
+.notice  article > div.left ul li div {line-height: 25px;}
 .notice  article > div.right {float: right;}
+.notice  article > div.right ul li {position: relative; border-bottom: 1px solid #fff;}
+.notice  article > div.right ul li:last-child {border-bottom: none;}
+.notice  article > div.right ul li span {display: block; position: relative; overflow: hidden; 
+width: 500px;  height: 60px; line-height: 60px; text-indent: 30px; white-space: nowrap; 
+text-overflow: ellipsis; }
+.notice  article > div.right p {position: absolute; right: 30px; top: 0px;}
+
 
 /*.slide_box .right >li >a >img {width: 50px;height: 50px;}*/
 /*slide*/
