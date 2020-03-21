@@ -1,8 +1,42 @@
 
+body { overflow: hidden; background-color: azure; text-align: center; 
+color: #FFF;padding: 0px;margin: 0px; width: 1600px;  }
+header {background-color: aquamarine;  
+    border: 1px solid red;
+    width: 1500px;
+}
+nav{ background-color: cadetblue; 
+border: 1px solid blue
+
+}
+main {
+    background-color: royalblue;
+    border: 1px solid red;
+
+}
+section {
+    width: 30%;
+    border: 1px solid red;
+    float: left;
+    background-color: saddlebrown;
+}
+aside{
+    width: 65%;
+    border: 1px solid red;
+    background-color: seagreen;
+    float: right;
+}
+
+footer {
+    border: 1px solid red;
+    background-color: slategrey;
+    position: relative;
+    clear: both;
+}
 
 
-div {width: 150px; height:150px;}
-header a {display: block; color: transparent; background-image: url(../portpolioimg/roomimg.jpg);}
+
+
 
 
 
